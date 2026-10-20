@@ -6,7 +6,7 @@ const renderContactPage = (() => {
   contact.setAttribute("data-tab-content", "");
   contact.innerHTML = `
     <div class="hero">
-    <h1>Contact us</h1>
+    <h1>Contáctanos</h1>
   </div>
   <div class="contact-container">
     <div class="info">
@@ -18,7 +18,7 @@ const renderContactPage = (() => {
       <div class="hours">
         <p>
           <i class="fi-cnsuhl-clock-solid"></i
-          ><span>Mon-Thurs:</span>8am-8pm<br /><span>Fri-Sun:</span
+          ><span>Lun-Jue:</span>8am-8pm<br /><span>Vie-Dom:</span
           >8am-11pm
         </p>
       </div>
@@ -27,20 +27,20 @@ const renderContactPage = (() => {
       </div>
       <div class="contact-form">
         <form onsubmit="return false">
-          <h3><i class="fi-xwsuxl-envelope-solid"></i>Message us</h3>
+          <h3><i class="fi-xwsuxl-envelope-solid"></i>Envíanos un mensaje</h3>
           <div class="input-box">
             <input type="text" required />
-            <span>Full Name</span>
+            <span>Nombre completo</span>
           </div>
           <div class="input-box">
             <input type="text" required />
-            <span>Email</span>
+            <span>Correo electrónico</span>
           </div>
           <div class="input-box">
             <textarea required></textarea>
-            <span>Type your message...</span>
+            <span>Escribe tu mensaje...</span>
           </div>
-          <input type="submit" value="Send" />
+          <input type="submit" value="Enviar" />
         </form>
       </div>
     </div>
