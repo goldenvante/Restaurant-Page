@@ -90,14 +90,14 @@ const renderMenuPage = (() => {
     <img src="./images/food.jpg" alt="Refresco" />
     <div class="item-content">
       <h4>Refresco: <span>$35.00</span></h4>
-      <p>Refresco frío de tu preferencia.</p>
+      <p>Refresco frío del sabor de tu preferencia.</p>
     </div>
   </div>
   <div class="menu-item">
     <img src="./images/food.jpg" alt="Jugo" />
     <div class="item-content">
       <h4>Jugo: <span>$30.00</span></h4>
-      <p>Jugo frío de frutas.</p>
+      <p>Jugo frío de frutas de temporada.</p>
     </div>
   </div>
   <div class="menu-item">

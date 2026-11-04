@@ -34,6 +34,57 @@ const wingSauceOptions = `
   <option value="0|Diabla">Diabla</option>
 `;
 
+const sodaFlavorOptions = `
+<option value="0|Coca-Cola">Coca-Cola</option>
+<option value="0|Pepsi">Pepsi</option>
+<option value="0|Fanta">Fanta</option>
+<option value="0|Sprite">Sprite</option>
+<option value="0|7Up">7Up</option>
+<option value="0|Manzanita">Manzanita</option>
+`;
+
+const juiceFlavorOptions = `
+<option value="0|Naranja">Naranja</option>
+<option value="0|Manzana">Manzana</option>
+<option value="0|Piña">Piña</option>
+<option value="0|Mango">Mango</option>
+<option value="0|Fresa">Fresa</option>
+<option value="0|Durazno">Durazno</option>
+<option value="0|Uva">Uva</option>
+`;
+
+const waterFlavorOptions = `
+<option value="0|Natural">Natural</option>
+<option value="0|Con Hielo">Con Hielo</option>
+
+`;
+
+const waterSparklingOptions = `
+<option value="0|Natural">Natural</option>
+<option value="0|Con hielo">Con hielo</option>
+`;
+
+const getItemOptions = (item) => {
+  if (item.id === 5) {
+    return { label: "Salsa (sin costo):", options: wingSauceOptions };
+  }
+
+  if ([9, 12].includes(item.id)) {
+    const options = item.id === 12 ? waterSparklingOptions : waterFlavorOptions;
+    return { label: "Presentación (sin costo):", options };
+  }
+
+  if (item.id === 10) {
+    return { label: "Sabor (sin costo):", options: sodaFlavorOptions };
+  }
+
+  if (item.id === 11) {
+    return { label: "Sabor (sin costo):", options: juiceFlavorOptions };
+  }
+
+  return { label: "Extras:", options: extrasOptions };
+};
+
 const renderOrderPage = (() => {
   const contentContainer = document.querySelector("#content");
   const order = document.createElement("div");
@@ -41,8 +92,10 @@ const renderOrderPage = (() => {
   order.setAttribute("data-tab-content", "");
 
   const itemsHtml = menuItems
-    .map(
-      (item) => `
+    .map((item) => {
+      const itemOptions = getItemOptions(item);
+
+      return `
     <div class="order-item" data-item-id="${item.id}">
       <div class="order-item-header">
         <h4>${item.name}: <span>${formatMoney(item.price)}</span></h4>
@@ -53,13 +106,13 @@ const renderOrderPage = (() => {
           <input type="number" class="qty-input" min="1" max="20" value="1" />
         </label>
         <label>
-          ${item.id === 5 ? "Salsa (sin costo):" : "Extras:"}
-          <select class="extras-select">${item.id === 5 ? wingSauceOptions : extrasOptions}</select>
+          ${itemOptions.label}
+          <select class="extras-select">${itemOptions.options}</select>
         </label>
       </div>
       <button type="button" class="add-to-cart-btn">Agregar al carrito</button>
-    </div>`
-    )
+    </div>`;
+    })
     .join("");
 
   order.innerHTML = `
