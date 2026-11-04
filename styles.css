@@ -167,6 +167,8 @@ li:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #home .address,
@@ -175,13 +177,18 @@ li:hover {
   font-family: var(--poppins);
   font-size: 2rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: var(--pale-yellow);
-  padding: 3rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 #home .address span,
 #home .hours span {
-  padding-right: 2rem;
+  padding-right: 0;
+  margin-bottom: 1rem;
   color: var(--pink);
   font-size: calc(1rem + 0.5vw);
 }
@@ -189,7 +196,7 @@ li:hover {
 #home .address p,
 #home .hours p {
   font-family: var(--poppins);
-  text-align: left;
+  text-align: center;
   font-size: calc(1rem + 0.5vw);
 }
 
@@ -230,6 +237,15 @@ li:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+#menu .menu-section-title {
+  flex-basis: 100%;
+  text-align: center;
+  color: var(--pale-yellow);
+  font-family: var(--poppins);
+  font-size: 2.4rem;
+  margin: 1rem 0 4rem;
 }
 
 #menu .menu-item {

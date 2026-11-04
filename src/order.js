@@ -1,23 +1,37 @@
-import { cart, formatMoney } from "./cart";
-import { updatePaymentSummary } from "./payment";
+import { cart, formatMoney } from "./cart.js";
+import { updatePaymentSummary } from "./payment.js";
 
 const menuItems = [
-  { id: 1, name: "Hamburger", price: 2.49 },
-  { id: 2, name: "Cheeseburger", price: 2.99 },
-  { id: 3, name: "Double Cheeseburger", price: 3.49 },
-  { id: 4, name: "Steak", price: 11.99 },
-  { id: 5, name: "BBQ Ribs", price: 8.99 },
-  { id: 6, name: "Grilled Cheese Sandwich", price: 4.99 },
-  { id: 7, name: "Caesar Salad", price: 7.99 },
-  { id: 8, name: "French Fries", price: 1.99 },
+  { id: 1, name: "Hamburguesa", price: 120 },
+  { id: 2, name: "Cheeseburger", price: 140 },
+  { id: 3, name: "Cheeseburger Doble", price: 170 },
+  { id: 4, name: "Corte", price: 250 },
+  { id: 5, name: "Alitas", price: 200 },
+  { id: 6, name: "Sandwich Cheese", price: 100 },
+  { id: 7, name: "Ensalada Caesar ", price: 180 },
+  { id: 8, name: "Papas a la francesa", price: 65},
+  { id: 9, name: "Agua", price: 25 },
+  { id: 10, name: "Refresco", price: 35 },
+  { id: 11, name: "Jugo", price: 30 },
+  { id: 12, name: "Agua mineral", price: 32 },
 ];
 
 const extrasOptions = `
   <option value="0|Sin extras">Sin extras</option>
-  <option value="0.5|Queso extra">Queso extra (+$0.50)</option>
-  <option value="0.75|Tocino">Tocino (+$0.75)</option>
-  <option value="1|Cebolla caramelizada">Cebolla caramelizada (+$1.00)</option>
-  <option value="1.5|Jalapeños">Jalapeños (+$1.50)</option>
+  <option value="15|Queso extra">Queso extra (+$15.00)</option>
+  <option value="30|Tocino">Tocino (+$30.00)</option>
+  <option value="15|Cebolla caramelizada">Cebolla caramelizada (+$15.00)</option>
+  <option value="10|Jalapeños">Jalapeños (+$10.00)</option>
+`;
+
+const wingSauceOptions = `
+  <option value="0|BBQ">BBQ</option>
+  <option value="0|Tamarindo">Tamarindo</option>
+  <option value="0|Lemon Pepper">Lemon Pepper</option>
+  <option value="0|Mango Habanero">Mango Habanero</option>
+  <option value="0|Bufalo picante">Búfalo picante</option>
+  <option value="0|Habanero">Habanero</option>
+  <option value="0|Diabla">Diabla</option>
 `;
 
 const renderOrderPage = (() => {
@@ -39,8 +53,8 @@ const renderOrderPage = (() => {
           <input type="number" class="qty-input" min="1" max="20" value="1" />
         </label>
         <label>
-          Extras:
-          <select class="extras-select">${extrasOptions}</select>
+          ${item.id === 5 ? "Salsa (sin costo):" : "Extras:"}
+          <select class="extras-select">${item.id === 5 ? wingSauceOptions : extrasOptions}</select>
         </label>
       </div>
       <button type="button" class="add-to-cart-btn">Agregar al carrito</button>

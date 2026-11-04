@@ -22,7 +22,7 @@ const cart = {
 
   getDelivery() {
     if (this.items.length === 0 || this.deliveryMode === "recoger") return 0;
-    return 2.99;
+    return 80.00;
   },
 
   getTax() {

@@ -1,4 +1,4 @@
-import { cart, formatMoney } from "./cart";
+import { cart, formatMoney } from "./cart.js";
 
 const renderPaymentPage = (() => {
   const contentContainer = document.querySelector("#content");

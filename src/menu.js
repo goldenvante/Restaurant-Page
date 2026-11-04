@@ -13,7 +13,7 @@ const renderMenuPage = (() => {
   <div class="menu-item">
     <img src="./images/hamburger.png" alt="" />
     <div class="item-content">
-      <h4>Hamburger: <span>$2.49</span></h4>
+      <h4>Hamburguesa: <span>$120.00</span></h4>
       <p>
         Pan, carne, jitomate, cebolla, lechuga y nuestra receta familiar
         secreta.
@@ -23,35 +23,36 @@ const renderMenuPage = (() => {
   <div class="menu-item">
     <img src="./images/cheeseburger.png" alt="" />
     <div class="item-content">
-      <h4>Cheeseburger: <span>$2.99</span></h4>
+      <h4>Cheeseburger: <span>$140.00</span></h4>
       <p>Similar a nuestra hamburguesa, pero con queso.</p>
     </div>
   </div>
   <div class="menu-item">
     <img src="./images/double-cheeseburger.png" alt="" />
     <div class="item-content">
-      <h4>Double Cheeseburger: <span>$3.49</span></h4>
+      <h4>Cheeseburger Doble: <span>$170.00</span></h4>
       <p>Similar a nuestra Cheeseburger, pero con una carne extra.</p>
     </div>
   </div>
   <div class="menu-item">
     <img src="./images/steak.png" alt="" />
     <div class="item-content">
-      <h4>Steak: <span>$11.99</span></h4>
+      <h4>Corte: <span>$250.00</span></h4>
       <p>Un jugoso bistec preparado exactamente como lo quieres.</p>
     </div>
   </div>
   <div class="menu-item">
     <img src="./images/ribs.png" alt="" />
     <div class="item-content">
-      <h4>BBQ Ribs: <span>$8.99</span></h4>
-      <p>Costillas de barbecue con el acompañamiento que elijas.</p>
+      <h4>Alitas: <span>$200.00</span></h4>
+      <p>Alitas de pollo bañadas sobre la salsa de tu preferencia
+      acompañadas de la guarnicion que prefieras.</p>
     </div>
   </div>
   <div class="menu-item">
     <img src="./images/grilled-cheese.png" alt="" />
     <div class="item-content">
-      <h4>Grilled Cheese Sandwich: <span>$4.99</span></h4>
+      <h4>Sandwich Cheese: <span>$100.00</span></h4>
       <p>
         Un sándwich de queso tostado y a la plancha, bañado en nuestra salsa
         especial.
@@ -61,7 +62,7 @@ const renderMenuPage = (() => {
   <div class="menu-item">
     <img src="./images/caesar-salad.png" alt="" />
     <div class="item-content">
-      <h4>Caesar Salad: <span>$7.99</span></h4>
+      <h4>Ensalada Caesar: <span>$180.00</span></h4>
       <p>
         Nuestra ensalada César con el aderezo que prefieras.
       </p>
@@ -70,11 +71,40 @@ const renderMenuPage = (() => {
   <div class="menu-item">
     <img src="./images/french-fries.png" alt="" />
     <div class="item-content">
-      <h4>French Fries: <span>$1.99</span></h4>
+      <h4>Papas a la francesa: <span>$65.00</span></h4>
       <p>
         A veces no quieres comer tu hamburguesa sola, ¿por qué no agregar
         unas papas a la francesa?
       </p>
+    </div>
+  </div>
+  <h2 class="menu-section-title">Bebidas</h2>
+  <div class="menu-item">
+    <img src="./images/food.jpg" alt="Agua" />
+    <div class="item-content">
+      <h4>Agua: <span>$25.00</span></h4>
+      <p>Botella de agua natural.</p>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="./images/food.jpg" alt="Refresco" />
+    <div class="item-content">
+      <h4>Refresco: <span>$35.00</span></h4>
+      <p>Refresco frío de tu preferencia.</p>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="./images/food.jpg" alt="Jugo" />
+    <div class="item-content">
+      <h4>Jugo: <span>$30.00</span></h4>
+      <p>Jugo frío de frutas.</p>
+    </div>
+  </div>
+  <div class="menu-item">
+    <img src="./images/food.jpg" alt="Agua mineral" />
+    <div class="item-content">
+      <h4>Agua mineral: <span>$32.00</span></h4>
+      <p>Agua mineral bien fría.</p>
     </div>
   </div>
 </div>`;

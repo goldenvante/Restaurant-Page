@@ -1,9 +1,9 @@
-import { pageLoad } from "./pageload"
-import { renderHomePage } from "./home";
-import { renderMenuPage } from "./menu";
-import { renderContactPage } from "./contact";
-import { renderOrderPage } from "./order";
-import { renderPaymentPage } from "./payment";
+import { pageLoad } from "./pageload.js"
+import { renderHomePage } from "./home.js";
+import { renderMenuPage } from "./menu.js";
+import { renderContactPage } from "./contact.js";
+import { renderOrderPage } from "./order.js";
+import { renderPaymentPage } from "./payment.js";
 
 const tabs = document.querySelectorAll("[data-tab-target]");
 const tabContents = document.querySelectorAll("[data-tab-content]");
