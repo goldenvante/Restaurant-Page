@@ -1,8 +1,8 @@
 :root {
-  --pink: #87a2eb;
-  --pale-yellow: #f8f6f8;
-  --dark-blue: #042f4b;
-  --orange: #f09063;
+  --pink: #8195eb;
+  --pale-yellow: #f6f7f8;
+  --dark-blue: #0d4981;
+  --orange: #eeb76f;
   --fredoka: "Fredoka One", cursive;
   --poppins: "Poppins", sans-serif;
   --sansita: "Sansita Swashed", cursive;
@@ -40,6 +40,14 @@ h2 {
   font-size: calc(2rem + 1vw);
 }
 
+.brand-title img {
+  width: 1em;
+  height: 1em;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-left: 0.2em;
+}
+
 .hamburger {
   position: absolute;
   top: 1.5rem;
@@ -75,6 +83,8 @@ li {
   transition: 0.3s ease;
   cursor: pointer;
 }
+
+
 
 .red {
   color: var(--pink);
@@ -121,6 +131,7 @@ li:hover {
   transform: translate(-50%, -50%);
 }
 
+
 #home h1 {
   background: linear-gradient(to right, var(--pink) 0%, var(--orange) 100%);
   background-clip: text;
@@ -130,7 +141,7 @@ li:hover {
 
 #home .hero p {
   color: var(--orange);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 #home .hero .btn-container {
@@ -151,7 +162,7 @@ li:hover {
 }
 
 #home .hero .order-now:hover {
-  background: #680ea5;
+  background: #028b09;
 }
 
 #home .info {
@@ -326,7 +337,7 @@ li:hover {
 
 #contact .contact-container {
   margin-top: 2rem;
-  background: rgba(94, 92, 221, 0.473);
+  background: rgba(131, 157, 241, 0.473);
   width: 60%;
   border-radius: 1.2rem;
   padding: calc(2rem + 2vw);
@@ -401,7 +412,7 @@ li:hover {
 }
 
 #contact .contact-container input[type="submit"]:hover {
-  background: #ac03fa;
+  background: #212e7a;
 }
 
 #order .hero,
@@ -523,17 +534,17 @@ li:hover {
 }
 
 .add-to-cart-btn:hover {
-  background: #680ea5;
+  background: #06109b;
 }
 
 .add-to-cart-btn.added {
-  background: #2e9e4f;
+  background: #0d6b29;
 }
 
 .cart {
   flex: 1;
   min-width: 30rem;
-  background: rgba(94, 92, 221, 0.473);
+  background: rgba(61, 95, 247, 0.473);
   border-radius: 1.2rem;
   padding: 2.5rem;
   align-self: flex-start;
@@ -646,7 +657,7 @@ li:hover {
 .checkout-btn:hover,
 .pay-btn:hover,
 .back-to-menu-btn:hover {
-  background: #680ea5;
+  background: #fc0303;
 }
 
 .payment-container {
@@ -675,7 +686,7 @@ li:hover {
 
 .payment-form-container {
   flex: 2;
-  background: rgba(94, 92, 221, 0.473);
+  background: rgba(106, 148, 238, 0.507);
   border-radius: 1.2rem;
   padding: 2.5rem;
 }

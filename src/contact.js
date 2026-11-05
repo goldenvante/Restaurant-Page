@@ -7,7 +7,8 @@ const renderContactPage = (() => {
   contact.innerHTML = `
     <div class="hero">
     <h1>Contáctanos</h1>
-  </div>
+      <img src="./images/contacto.png" alt="" width="50" height="50" />
+    </div>
   <div class="contact-container">
     <div class="info">
       <div class="address">

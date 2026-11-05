@@ -5,7 +5,7 @@ const pageLoad = (() => {
   const header = document.createElement("header");
   header.innerHTML = `
   <nav>
-  <h2>Food on Time</h2>
+  <h2 class="brand-title">Food on Time <img src="./images/ontime.png" alt="" /></h2>
   <a href="#" class="hamburger">
     <span class="line line1"></span>
     <span class="line line2"></span>

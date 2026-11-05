@@ -80,28 +80,28 @@ const renderMenuPage = (() => {
   </div>
   <h2 class="menu-section-title">Bebidas</h2>
   <div class="menu-item">
-    <img src="./images/food.jpg" alt="Agua" />
+    <img src="./images/water.png" alt="Agua" />
     <div class="item-content">
       <h4>Agua: <span>$25.00</span></h4>
       <p>Botella de agua natural.</p>
     </div>
   </div>
   <div class="menu-item">
-    <img src="./images/food.jpg" alt="Refresco" />
+    <img src="./images/soda.png" alt="Refresco" />
     <div class="item-content">
       <h4>Refresco: <span>$35.00</span></h4>
       <p>Refresco frío del sabor de tu preferencia.</p>
     </div>
   </div>
   <div class="menu-item">
-    <img src="./images/food.jpg" alt="Jugo" />
+    <img src="./images/juice.png" alt="Jugo" />
     <div class="item-content">
       <h4>Jugo: <span>$30.00</span></h4>
       <p>Jugo frío de frutas de temporada.</p>
     </div>
   </div>
   <div class="menu-item">
-    <img src="./images/food.jpg" alt="Agua mineral" />
+    <img src="./images/sparkling.png" alt="Agua mineral" />
     <div class="item-content">
       <h4>Agua mineral: <span>$32.00</span></h4>
       <p>Agua mineral bien fría.</p>

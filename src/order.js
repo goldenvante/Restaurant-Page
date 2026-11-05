@@ -118,6 +118,7 @@ const renderOrderPage = (() => {
   order.innerHTML = `
   <div class="hero">
     <h1>Ordenar</h1>
+    <img src="./images/delivery.png" alt="" width="50" height="50" />
   </div>
   <div class="order-container">
     <div class="order-menu">
