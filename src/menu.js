@@ -94,7 +94,7 @@ const renderMenuPage = (() => {
     </div>
   </div>
   <div class="menu-item">
-    <img src="./images/Juice.png" alt="Jugo" />
+    <img src="./images/juice.png" alt="Jugo" />
     <div class="item-content">
       <h4>Jugo: <span>$30.00</span></h4>
       <p>Jugo frío de frutas de temporada.</p>
